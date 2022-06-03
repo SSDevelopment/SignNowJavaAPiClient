@@ -26,9 +26,9 @@ public class Document extends GenericId {
     /**
      * Free form invites info
      */
+    public List<DocumentSignRequestInfo> requests;
     @JsonProperty("fields")
     public List<FieldMetadata> fields;
-    public List<DocumentSignRequestInfo> requests;
 
     public static class SigningLinkRequest {
         @JsonProperty("document_id")
